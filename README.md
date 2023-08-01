@@ -97,35 +97,34 @@ Docker is utilized for containerizing the application and its dependencies. Cont
 
 The repository is organized as follows:
 
-project/
-├── .github/               # CI/CD workflows and related configurations
-├── artifacts/             # DVC-tracked output artifacts
-├── config/                # Configuration files
-├── logs/                  # Log files (optional)
-├── research/              # Folder for Jupyter Notebooks and research-related files
-├── src/                   # Source code directory
-│   ├── cnnclassifier/     # Custom CNNClassifier package
-│       ├── components/    # Helper components and utilities
-│       ├── config/        # Configuration files for the CNNClassifier package
-│       ├── constants/     # Constants used in the package
-│       ├── entity/        # Entity classes (e.g., EvaluationConfig, PrepareBaseModelConfig)
-│       ├── pipeline/      # DVC pipeline stages (stage_01_data_ingestion.py, stage_02_prepare_base_model.py, etc.)
-│       ├── utils/         # Utility functions used in the package
-│       └── templates/     # Templates for various purposes
-├── app.py             	   # Application entry point or main script
-├── main.py                # Main script to orchestrate the project
-├── dockerfile             # Docker configuration file
-├── dvc.yaml               # DVC pipeline definition
-├── params.yaml            # YAML file containing parameters for the pipeline stages
-├── template.py            # Template file to create files and folders of project
-├── scores.json            # Model evaluation scores
-├── README.md              # Project documentation
-├── requirements.txt       # Python dependencies
-├── setup.py               # Setup script for installing the CNNClassifier package
-├── .gitignore             # Git ignore file
-└── .dockerignore          # Docker ignore file (if needed)
+- project/
+	- .github/               # CI/CD workflows and related configurations
+	- artifacts/             # DVC-tracked output artifacts
+	- config/                # Configuration files
+	- logs/                  # Log files (optional)
+	- research/              # Folder for Jupyter Notebooks and research-related files
+	- src/                   # Source code directory
+		- cnnclassifier/      # Custom CNNClassifier package
+		- components/    		# Helper components and utilities
+		- config/        		# Configuration files for the CNNClassifier package
+		- constants/     		# Constants used in the package
+		- entity/        		# Entity classes (e.g., EvaluationConfig, PrepareBaseModelConfig)
+		- pipeline/      		# DVC pipeline stages (stage_01_data_ingestion.py, stage_02_prepare_base_model.py, etc.)
+		- utils/         		# Utility functions used in the package
+		- templates/     		# Templates for various purposes
+	- app.py             	   # Application entry point or main script
+	- main.py                # Main script to orchestrate the project
+	- dockerfile             # Docker configuration file
+	- dvc.yaml               # DVC pipeline definition
+	- params.yaml            # YAML file containing parameters for the pipeline stages
+	- template.py            # Template file to create files and folders of project
+	- scores.json            # Model evaluation scores
+	- README.md              # Project documentation
+	- requirements.txt       # Python dependencies
+	- setup.py               # Setup script for installing the CNNClassifier package
+	- .gitignore             # Git ignore file
+	- .dockerignore          # Docker ignore file (if needed)
 
-```
 
 ## Getting Started
 
